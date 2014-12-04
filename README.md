@@ -1,5 +1,6 @@
-Update_error
+Fix error Ubuntu 14.04 command
 ============
+- Error repo
 ```
 sudo -i
 apt-get clean
@@ -8,4 +9,10 @@ mv lists lists.old
 mkdir -p lists/partial
 apt-get clean
 apt-get update
-``
+```
+
+- Hash sum miss
+```
+sudo rm /var/lib/apt/lists/* -vf
+sudo apt-get update
+```
