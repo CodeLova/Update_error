@@ -13,6 +13,6 @@ apt-get update
 
 - Hash sum miss
 ```
-sudo rm /var/lib/apt/lists/*
+sudo rm -rf /var/lib/apt/lists/*
 sudo apt-get update
 ```
